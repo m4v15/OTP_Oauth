@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 app.use(cookieParser())
 
 // set up session storage to store the users access token as you need to
-// cookie should be set to secure:false for production so that
+// cookie should be set to secure:true for production so that
 // the cookie will only be sent back to a https server
 app.use(session({
   secret: 'myownsecret',
